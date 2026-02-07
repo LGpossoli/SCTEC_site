@@ -1,0 +1,23 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: darkblue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+p{
+    color:blue; 
+}
+
+.frase {
+    color: deepskyblue;
+    font-size: 8mm;
+}
+
+#citacao {
+    color: blueviolet;
+    font-size: 10mm;
+}
