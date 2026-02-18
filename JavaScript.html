@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula JavaScript</title>
+    <script src="script.js"></script>
+
+</head>
+<!--JavaScript é o cérebro das aplicações WEB-->
+<!--Operadores:
+&& - E
+|| - OU
+! - NEGAÇÃO
+== - IGUAL
+!= - DIFERENTE
+=== - VALOR E TIPO IGUAL
+!== - VALOR E TIPO DIFERENTE
+> - MAIOR
+< - MENOR
+>= MAIOR IGUAL
+<= - MENOR IGUAL
+= - ATRIBUI VALOR
++= - ADICIONA VALOR
+-= - DIMINUI VALOR
+*= - MULTIPLICA VALOR
+/= - DIVIDE VALOR
+%= - RESTO
+% - MÓDULO/RESTO
+-->
+
+<body>
+    <h1>Calculadora De Desconto</h1>
+    <label for="">Digite o valor original do produto:</label>
+    <input type="text" id="valor"> <!--Campo para escrever--><br>
+
+    <label for="">Digite a porcentagem de desconto:</label> 
+    <input type="text" id="desconto"> <!--Campo para escrever-->
+    
+    <button onclick="precoFinal()">Verificar Preço Final</button>
+    <p id="preco"></p>
+</body>
+
+</html>

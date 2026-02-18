@@ -1,0 +1,45 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+
+}
+/*Aprender Flexbox é como ganhar superpoderes de Layout*/
+body{
+    padding: 0;
+    margin: 0; /*Tira as margens naturais do HTML*/
+}
+
+.container {
+    background-color: rgb(106, 106, 255);
+    
+    padding: 10px;
+    height: 100px;
+    display: flex; /*responsivo*/
+    flex-direction: row;
+    justify-content: space-around; /*ajusta os blocos na horizontal*/
+    align-items: center; /*ajusta os blocos na vertical*/
+    flex-wrap: wrap; /*Quebra linhas*/
+}
+
+.box {
+    height: 50px;
+    width: 100px;
+    border: 1.5px solid black;
+    border-radius: 8px;
+    text-align: center;
+    align-content: center; /*alinha o texto no box*/
+}
+
+#entrar {
+    background-color: green;
+    flex-grow: 1;
+}
+
+#abrir {
+    background-color: yellow;
+    flex-grow: 3;
+}
+
+#sair {
+    background-color: red;
+    flex-grow: 1;
+}
