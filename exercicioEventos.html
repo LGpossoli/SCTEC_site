@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Funções e Eventos</title>
+    <script src="exercicioEventos.js"></script>
+</head>
+<style>
+    button{
+        margin: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    input{
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+</style>
+<body>
+    
+    <h1>Escolha a pizza.</h1>
+    <label for="nome">Digite o numero do pedido:</label>
+    <input type="text" id="inputBox" placeholder="Digite um nº de 1 a 4" size="20">
+    <button onclick="clientePedido()">Pizza escolhida</button>
+    <p id="mensagem"></p>
+
+</body>
+
+</html>
