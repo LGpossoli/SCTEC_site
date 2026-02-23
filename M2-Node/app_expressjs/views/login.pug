@@ -1,0 +1,34 @@
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Login
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css")
+
+  body
+    .container.mt-4
+      h1.mb-4 Login
+
+      // ✅ IMPORTANTE: method POST e action para sua rota
+      form(action="/login" method="POST")
+        .form-group
+          label(for="user") Usuário:
+          input#user.form-control(
+            type="text"
+            name="user"
+            placeholder="Digite seu usuário"
+            required
+          )
+
+        .form-group
+          label(for="password") Senha:
+          input#password.form-control(
+            type="password"
+            name="password"
+            placeholder="****"
+            required
+          )
+
+        button.btn.btn-primary(type="submit") Login
+        a.btn.btn-secondary.ml-2(href="/") Esqueci minha senha

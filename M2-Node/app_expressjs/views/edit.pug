@@ -1,0 +1,36 @@
+doctype html
+html(lang="pt-br")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title Editar cliente
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css")
+
+  body
+    .container.mt-4
+      h1.mb-4 Editar cliente
+
+      // ✅ IMPORTANTE: method POST e action para sua rota
+      form(role="form" method="POST" action=`clientes/edit/${client.id}` )
+        .form-group
+          label(for="nome") Nome:
+          input#nome.form-control(
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome"
+            value = client.nome
+            required
+          ) 
+
+        .form-group
+          label(for="email") Email:
+          input#email.form-control(
+            type="email"
+            name="email"
+            placeholder="digite@seuemail.com"
+            value = client.email
+            required
+          )
+
+        button.btn.btn-primary(type="submit") Editar cliente
+        a.btn.btn-secondary.ml-2(href="/") Voltar
